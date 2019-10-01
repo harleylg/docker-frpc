@@ -8,4 +8,4 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
 
 VOLUME /etc/frpc
 
-ENTRYPOINT ["frps","-c","/etc/frpc/frpc.ini"]
+ENTRYPOINT ["frpc","-c","/etc/frpc/frpc.ini"]
